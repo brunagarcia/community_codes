@@ -1,0 +1,14 @@
+<script>
+  (function () {
+    //Getting the url of the page
+    const url_string = window.location.href
+    //Temp URL 
+    var url = new URL(url_string);
+    //Change the words myparam to the name of your parameter. 
+    const myparam = url.searchParams.get("myparam");
+
+    //Only one options case: Add dynamic URL here - Eg: Google Serach 
+    //Change the "lp-pom-button-11" to your button id. 
+    document.getElementById("lp-pom-button-11").href = `https://www.google.com/search?q=${myparam}`;
+  })
+</script>

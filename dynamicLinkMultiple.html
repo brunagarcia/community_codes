@@ -1,0 +1,20 @@
+<script>
+  (function () {
+    //Getting the url of the page
+    const url_string = window.location.href
+    //Temp URL 
+    var url = new URL(url_string);
+    //Change the words myparam to the name of your parameter. 
+    const myparam = url.searchParams.get("myparam");
+
+    //Multiple options case: 
+    switch (myparam) {
+      case 'Google':
+        document.getElementById("lp-pom-button-46").href = "http://www.google.com";
+        break;
+      case 'Unbounce':
+        document.getElementById("lp-pom-button-46").href = "http://www.unbounce.com";
+        break;
+    }
+  })();
+</script>
